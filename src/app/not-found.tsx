@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function NotFoundPage() {
   return (
@@ -6,7 +6,7 @@ function NotFoundPage() {
       <h1>Not Found Page Brother</h1>
       <p>Sorry, this page does not exist</p>
     </div>
-  )
+  );
 }
 
-export default NotFoundPage
+export default NotFoundPage;

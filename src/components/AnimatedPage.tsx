@@ -1,5 +1,5 @@
-"use client"
-import React, { ReactNode } from 'react'
+"use client";
+import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 
 const pageVariants = {
@@ -24,18 +24,18 @@ interface AnimatedPageProps {
   children: ReactNode;
 }
 
-function AnimatedPage({children}: AnimatedPageProps) {
+function AnimatedPage({ children }: AnimatedPageProps) {
   return (
     <motion.div
-    initial="initial"
-    animate="in"
-    exit="out"
-    variants={pageVariants}
-    transition={pageTransition}
-  >
-    {children}
-  </motion.div>
-  )
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      {children}
+    </motion.div>
+  );
 }
 
 export default AnimatedPage;
