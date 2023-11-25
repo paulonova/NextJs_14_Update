@@ -53,9 +53,7 @@ OR
 * When fetch data another parameter can be added to avoid cache.
 
 ```bash
-const response = await fetch(`https://api.unsplash.com/photos/random?client_id=${process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY}`, {
-    cache: "no-cache"
-  });
+const response = await fetch(`https://api.unsplash.com/photos/random?client_id=${process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY}`, { cache: "no-cache"});
 
 ```
 
