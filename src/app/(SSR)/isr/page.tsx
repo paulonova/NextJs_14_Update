@@ -1,5 +1,5 @@
 import React from "react";
-import { UnsplashImage } from "../../models/unsplash";
+import { UnsplashImage } from "../../models/unsplash-image";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";

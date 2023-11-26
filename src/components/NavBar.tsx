@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { Container, Navbar } from '@/components/bootstrap';
-import { Nav } from 'react-bootstrap';
+import { Nav, NavDropdown } from 'react-bootstrap';
 import Link from 'next/link';
 import { usePathname} from 'next/navigation';
 
@@ -33,6 +33,11 @@ function NavBar() {
           <Nav>
             <Nav.Link as={Link} href='/isr' active={pathName === "/isr"}>ISR</Nav.Link>
           </Nav>
+          <NavDropdown className='text-white-50' active={pathName === "/topics"} title='Topics' id='topics-dropdown'>
+            <NavDropdown.Item as={Link} href='/topics/music'>Music</NavDropdown.Item>
+            <NavDropdown.Item as={Link} href='/topics/coding'>Coding</NavDropdown.Item>
+            <NavDropdown.Item as={Link} href='/topics/instruments'>Instruments</NavDropdown.Item>
+          </NavDropdown>
         </Navbar.Collapse>
       </Container>
     </Navbar>

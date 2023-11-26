@@ -41,7 +41,7 @@ npm install --save-dev --save-exact prettier
 ```
 
 
-## Caching
+## Caching - REVALIDATE
 
 This revalidate function make the page dynamic and do not cache any data..
 
@@ -56,6 +56,24 @@ OR
 const response = await fetch(`https://api.unsplash.com/photos/random?client_id=${process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY}`, { cache: "no-cache"});
 
 ```
+
+
+### NEW FEATURES
+
+```bash
+export const dynamicParams = false;
+```
+
+<p>I can only access the generateStaticParams list...</p>
+<p>A 404 page will show up if you try other param.</p>
+
+</hr>
+
+
+```bash
+export const dynamicParams = false;
+```
+
 
 ## GOOD TO KNOW!
 

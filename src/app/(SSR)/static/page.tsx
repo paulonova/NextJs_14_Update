@@ -1,5 +1,5 @@
 import React from "react";
-import { UnsplashImage } from "../../models/unsplash";
+import { UnsplashImage } from "../../models/unsplash-image";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -21,7 +21,7 @@ const Images = async () => {
   return (
     <div className="d-flex flex-column align-items-center">
       <Alert>
-        This page <strong>fetches and caches data at build time</strong> 
+        This page <strong>fetches and caches data at build time </strong> 
         Even though the Unsplash API always return a new image, we see the 
         same image after refreshing the page until we compile the project again.
       </Alert>
