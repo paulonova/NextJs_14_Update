@@ -31,7 +31,7 @@ function NavBar() {
             <Nav.Link as={Link} href='/dynamic' active={pathName === "/dynamic"}>Dynamic Image</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link as={Link} href='/isr' active={pathName === "/isr"}>incremental static Image</Nav.Link>
+            <Nav.Link as={Link} href='/isr' active={pathName === "/isr"}>ISR</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
