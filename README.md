@@ -69,11 +69,24 @@ export const dynamicParams = false;
 
 </hr>
 
+<h3>Caching data</h3>
 
 ```bash
-export const dynamicParams = false;
+ const getUserCache = cache(getUser);
 ```
+<p>Use cache if I not using the Native fetch, ex: "Axios"</p>
 
+<hr/>
+
+<h3>Using Client Page inside of a Server Rendered Page</h3>
+
+<p>** MEtadata can´t be used inside of a Client Page, so the solution is
+to create a Client component and import into the Server Page and then use the Metadata function..</p>
+
+> First create a server page.
+> Second, create a separate component using "use client" notation as a component
+> Set in the first page the Client Page created.
+> Then you can use the Metadata from Next.js in a Client Page
 
 ## GOOD TO KNOW!
 

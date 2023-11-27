@@ -33,7 +33,7 @@ function NavBar() {
           <Nav>
             <Nav.Link as={Link} href='/isr' active={pathName === "/isr"}>ISR</Nav.Link>
           </Nav>
-          <NavDropdown className='text-white-50' active={pathName === "/topics"} title='Topics' id='topics-dropdown'>
+          <NavDropdown className='text-white-50' title='Topics' id='topics-dropdown'>
             <NavDropdown.Item as={Link} href='/topics/music'>Music</NavDropdown.Item>
             <NavDropdown.Item as={Link} href='/topics/coding'>Coding</NavDropdown.Item>
             <NavDropdown.Item as={Link} href='/topics/instruments'>Instruments</NavDropdown.Item>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "./TopicPage.module.scss";
 import { Alert } from "@/components/bootstrap";
+import { Metadata } from "next";
 
 interface PageProps {
   params: { topic: string };
@@ -13,7 +14,7 @@ interface PageProps {
 // I can only access the generateStaticParams list... A 404 page will show up if you try other param.
 //export const dynamicParams = false;
 
- export async function generateMetadata({ params: {topic} }: PageProps) {
+ export function generateMetadata({ params: {topic} }: PageProps): Metadata {
   return {
     title: topic + " - NextJs 13.4 Image Gallery",
   }
